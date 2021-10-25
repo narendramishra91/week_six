@@ -1,4 +1,4 @@
-openapi: 3.0.0
+fopenapi: 3.0.0
 info:
   title: Week Six Assignment
   description: >
@@ -564,7 +564,7 @@ paths:
             example: 10
       responses:
         '200':
-          description: Request Sucessful.
+          description: Successfully deleted.
         '404':
           description: Enrollment for the student not found.
         '500':
