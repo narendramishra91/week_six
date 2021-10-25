@@ -204,7 +204,7 @@ paths:
                     type: string
                     example: Course Description Example
         '404':
-          description: Course you requested to update not found.
+          description: Course not found.
         '500':
           description: Internal Server Error
         '400':
@@ -231,7 +231,7 @@ paths:
         '200':
           description: Successfully Deleted.
         '404':
-          description: Course does not exist.
+          description: Course not found.
         '500':
           description: Intenal Server Error.
 
@@ -290,9 +290,9 @@ paths:
                   error_message:
                     type: string
   /api/student/{student_id}:
-    description: End point to read, update and delete the student resource.
+    description: Url to read, update and delete the student resource.
     get:
-      description: Operation to read student resource.
+      description: Operation to read student resource for a given id.
       parameters:
         - in: path
           name: student_id
@@ -324,7 +324,7 @@ paths:
         '500':
           description: Internal server error.
         '404':
-          description: Student does not exist.
+          description: Student not found.
 
 
     put:
@@ -372,7 +372,7 @@ paths:
                     type: string
                     example: MA19M010
         '404':
-          description: Content not found
+          description: Student not found.
         '500':
           description: Internal Server Error
         '400':
@@ -401,7 +401,7 @@ paths:
         '500':
           description: Internal Server Error.
         '404':
-          description: Resourse Not Found
+          description: Student not found.
 
   /api/student:
     description: End point to create student resource
@@ -460,9 +460,9 @@ paths:
                     type: string
 
   /api/student/{student_id}/enrollment:
-    description: End point to create enrollment
+    description: Url to enroll a student and get the list of enrollments for a student.
     get:
-      description: student's course enrollments by studentId
+      description: List of courses the student is enrolled in.
       parameters:
         - in: path
           name: student_id
@@ -494,7 +494,7 @@ paths:
           description: Internal Server Error.
 
     post:
-      description: Add student enrollment aka enroll the student to a course
+      description: Add student enrollment aka enroll the student to a course.
       parameters:
         - in: path
           name: student_id
@@ -512,8 +512,8 @@ paths:
                   type: integer
                   example: 12345
       responses:
-        '200':
-          description: Request Sucessful.
+        '201':
+          description: Enrollment successful.
           content:
             application/json:
               schema:
@@ -530,7 +530,7 @@ paths:
                       type: integer
                       example: 201
         '404':
-          description: Requested resource not found.
+          description: Student not found.
         '500':
           description: Internal Server Error.
         '400':
@@ -548,7 +548,7 @@ paths:
   /api/student/{student_id}/enrollment/{enrollment_id}:
     description: Url to delete enrollment of given enrollment_id
     delete:
-      description: Delete student enrollment
+      description: Delete student enrollment.
       parameters:
         - in: path
           name: student_id
@@ -566,7 +566,7 @@ paths:
         '200':
           description: Request Sucessful.
         '404':
-          description: Requested resource not found.
+          description: Enrollment for the student not found.
         '500':
           description: Internal Server Error.
 
