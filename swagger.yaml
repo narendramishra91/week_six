@@ -103,7 +103,7 @@ info:
       <tr>
         <td>Course</td>
         <td>COURSE001</td>
-        <td>Some required paramenter missing or invalid dataype.</td>
+        <td>course_name, course_code is required and .</td>
       </tr>
       <tr>
         <td>Student</td>
