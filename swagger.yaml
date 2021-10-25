@@ -135,7 +135,7 @@ paths:
             example: 201
       responses:
         '200':
-          description: Request Successful.
+          description: Request Successful
           content:
             application/json:
               schema:
@@ -155,9 +155,9 @@ paths:
                     type: string
                     example: Course Description Example
         '500':
-          description: Internal Server Error.
+          description: Internal Server Error
         '404':
-          description: Course not found.
+          description: Course not found
 
     put:
       description: Operation to update the course resource.
@@ -185,7 +185,7 @@ paths:
                   example: Course Description Example
       responses:
         '200':
-          description: Successfuly updated.
+          description: Successfuly updated
           content:
             application/json:
               schema:
@@ -204,11 +204,11 @@ paths:
                     type: string
                     example: Course Description Example
         '404':
-          description: Course not found.
+          description: Course not found
         '500':
-          description: Internal Server Error.
+          description: Internal Server Error
         '400':
-          description: Bad request.
+          description: Bad request
           content:
             application/json:
               schema:
@@ -219,7 +219,7 @@ paths:
                   error_message:
                     type: string
     delete:
-      description: Operation to delete the course resource.
+      description: Operation to delete the course resource
       parameters:
         - in: path
           name: course_id
@@ -229,14 +229,14 @@ paths:
             example: 201
       responses:
         '200':
-          description: Successfully Deleted.
+          description: Successfully Deleted
         '404':
-          description: Course not found.
+          description: Course not found
         '500':
-          description: Intenal Server Error.
+          description: Intenal Server Error
 
   /api/course:
-    description: End point to create course resource.
+    description: End point to create course resource
     post:
       description: Operation to create the course resource
       requestBody:
@@ -256,7 +256,7 @@ paths:
                   example: Course Description Example
       responses:
         '201':
-          description: Successfully Created.
+          description: Successfully Created
           content:
             application/json:
               schema:
@@ -275,11 +275,11 @@ paths:
                     type: string
                     example: Course Description Example
         '409':
-          description: course_code already exist.
+          description: course_code already exist
         '500':
-          description: Internal Server Error.
+          description: Internal Server Error
         '400':
-          description: Bad request.
+          description: Bad request
           content:
             application/json:
               schema:
@@ -292,7 +292,7 @@ paths:
   /api/student/{student_id}:
     description: Url to read, update and delete the student resource.
     get:
-      description: Operation to read student resource.
+      description: Operation to read student resource
       parameters:
         - in: path
           name: student_id
@@ -302,7 +302,7 @@ paths:
             example: 201
       responses:
         '200':
-          description: Success
+          description: Request Successful
           content:
             application/json:
               schema:
@@ -322,13 +322,13 @@ paths:
                     type: string
                     example: MA19M010
         '500':
-          description: Internal server error.
+          description: Internal server error
         '404':
-          description: Student not found.
+          description: Student not found
 
 
     put:
-      description: Operation to update the student resource.
+      description: Operation to update the student resource
       parameters:
         - in: path
           name: student_id
@@ -353,7 +353,7 @@ paths:
                   example: MA19M010
       responses:
         '200':
-          description: Successfully updated.
+          description: Successfully updated
           content:
             application/json:
               schema:
@@ -372,11 +372,11 @@ paths:
                     type: string
                     example: MA19M010
         '404':
-          description: Student not found.
+          description: Student not found
         '500':
           description: Internal Server Error
         '400':
-          description: Bad request.
+          description: Bad request
           content:
             application/json:
               schema:
@@ -387,7 +387,7 @@ paths:
                   error_message:
                     type: string
     delete:
-      description: Operation to delete the course resource.
+      description: Operation to delete the course resource
       parameters:
         - in: path
           name: student_id
@@ -397,16 +397,16 @@ paths:
             example: 101
       responses:
         '200':
-          description: Successfully Deleted.
+          description: Successfully Deleted
         '500':
-          description: Internal Server Error.
+          description: Internal Server Error
         '404':
-          description: Student not found.
+          description: Student not found
 
   /api/student:
     description: Url to create student resource
     post:
-      description: Operation to create the student resource.
+      description: Operation to create the student resource
       requestBody:
         content:
           application/json:
@@ -424,7 +424,7 @@ paths:
                   example: MA19M010
       responses:
         '201':
-          description: Successfully Created.
+          description: Successfully Created
           content:
             application/json:
               schema:
@@ -444,11 +444,11 @@ paths:
                     type: string
                     example: MA19M010
         '409':
-          description: student already exist.
+          description: Student already exist
         '500':
-          description: Internal Server Error.
+          description: Internal Server Error
         '400':
-          description: Bad request.
+          description: Bad request
           content:
             application/json:
               schema:
@@ -460,9 +460,9 @@ paths:
                     type: string
 
   /api/student/{student_id}/enrollment:
-    description: Url to enroll a student and get the list of enrollments for a student.
+    description: Url to enroll a student and get the list of enrollments for a student
     get:
-      description: List of courses the student is enrolled in.
+      description: List of courses the student is enrolled in
       parameters:
         - in: path
           name: student_id
@@ -472,7 +472,7 @@ paths:
             example: 101
       responses:
         '200':
-          description: Request Sucessful.
+          description: Request Successful
           content:
             application/json:
               schema:
@@ -489,12 +489,12 @@ paths:
                       type: integer
                       example: 201
         '404':
-          description: Student is not enrolled in any course.
+          description: Student is not enrolled in any course
         '500':
-          description: Internal Server Error.
+          description: Internal Server Error
 
     post:
-      description: Add student enrollment aka enroll the student to a course.
+      description: Add student enrollment aka enroll the student to a course
       parameters:
         - in: path
           name: student_id
@@ -513,7 +513,7 @@ paths:
                   example: 12345
       responses:
         '201':
-          description: Enrollment successful.
+          description: Enrollment successful
           content:
             application/json:
               schema:
@@ -530,11 +530,11 @@ paths:
                       type: integer
                       example: 201
         '404':
-          description: Student not found.
+          description: Student not found
         '500':
-          description: Internal Server Error.
+          description: Internal Server Error
         '400':
-          description: Bad request.
+          description: Bad request
           content:
             application/json:
               schema:
@@ -564,9 +564,9 @@ paths:
             example: 10
       responses:
         '200':
-          description: Successfully deleted.
+          description: Successfully deleted
         '404':
-          description: Enrollment for the student not found.
+          description: Enrollment for the student not found
         '500':
-          description: Internal Server Error.
+          description: Internal Server Error
 
