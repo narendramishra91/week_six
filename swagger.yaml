@@ -157,7 +157,7 @@ paths:
         '500':
           description: Internal Server Error.
         '404':
-          description: Resource not found.
+          description: Course not found.
 
     put:
       description: Operation to update the course detail
@@ -204,7 +204,7 @@ paths:
                     type: string
                     example: Course Description Example
         '404':
-          description: Resource you requested to update not found
+          description: Course you requested to update not found.
         '500':
           description: Internal Server Error
         '400':
