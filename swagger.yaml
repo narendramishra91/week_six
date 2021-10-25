@@ -125,7 +125,7 @@ paths:
   /api/course/{course_id}:
     description: End point to read, update and delete a course resource with course_id = courseId.
     get:
-      description: Operation to Read course resource
+      description: Operation to Read course resource.
       parameters:
         - in: path
           name: course_id
@@ -135,7 +135,7 @@ paths:
             example: 201
       responses:
         '200':
-          description: Success
+          description: Request Successful.
           content:
             application/json:
               schema:
@@ -160,7 +160,7 @@ paths:
           description: Course not found.
 
     put:
-      description: Operation to update the course detail
+      description: Operation to update the course resource.
       parameters:
         - in: path
           name: course_id
@@ -206,7 +206,7 @@ paths:
         '404':
           description: Course not found.
         '500':
-          description: Internal Server Error
+          description: Internal Server Error.
         '400':
           description: Bad request.
           content:
@@ -292,7 +292,7 @@ paths:
   /api/student/{student_id}:
     description: Url to read, update and delete the student resource.
     get:
-      description: Operation to read student resource for a given id.
+      description: Operation to read student resource.
       parameters:
         - in: path
           name: student_id
@@ -353,7 +353,7 @@ paths:
                   example: MA19M010
       responses:
         '200':
-          description: Successfuly updated.
+          description: Successfully updated.
           content:
             application/json:
               schema:
@@ -387,7 +387,7 @@ paths:
                   error_message:
                     type: string
     delete:
-      description: Operation to delete the course detail
+      description: Operation to delete the course resource.
       parameters:
         - in: path
           name: student_id
@@ -404,9 +404,9 @@ paths:
           description: Student not found.
 
   /api/student:
-    description: End point to create student resource
+    description: Url to create student resource
     post:
-      description: Operation to create the student resource
+      description: Operation to create the student resource.
       requestBody:
         content:
           application/json:
@@ -489,7 +489,7 @@ paths:
                       type: integer
                       example: 201
         '404':
-          description: Requested resource not found.
+          description: Student is not enrolled in any course.
         '500':
           description: Internal Server Error.
 
