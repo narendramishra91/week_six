@@ -103,18 +103,23 @@ info:
       <tr>
         <td>Course</td>
         <td>COURSE001</td>
-        <td>course_name, course_code is required and .</td>
+        <td>Course Name, Course Code is required and Course Code, Course Description, Course Name should be string.</td>
       </tr>
       <tr>
         <td>Student</td>
         <td>STUDENT001</td>
-        <td>Some required paramenter missing or invalid dataype.</td>
+        <td>Roll Number, First Name is required and Roll Number, First Name and Last Name is String </td>
       </tr>
       <tr>
         <td>Enrollment</td>
         <td>ENROLLMENT001</td>
-        <td>Some required paramenter missing or invalid dataype.</td>
-      </tr>         
+        <td>Course Does not exist</td>
+      </tr>
+      <tr>
+        <td>Enrollment</td>
+        <td>ENROLLMENT002</td>
+        <td>Student does not exist.</td>
+      </tr>    
     </tbody>
     </table>
     
