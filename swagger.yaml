@@ -489,7 +489,7 @@ paths:
                   error_message:
                     type: string
 
-  /api/student/{student_id}/courses:
+  /api/student/{student_id}/course:
     description: Url to get the the list of enrollments a student with student_id is enrolled in.
     get:
       description: URL to get the list of enrollments, the student is enrolled in. This path belongs to the Enrollment table.
