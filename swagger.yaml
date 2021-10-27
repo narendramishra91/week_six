@@ -489,8 +489,8 @@ paths:
                   error_message:
                     type: string
 
-  /api/student/{student_id}/enrollment:
-    description: Url to enroll a student and get the list of enrollments for a student
+  /api/student/{student_id}/courses:
+    description: Url to get the the list of enrollments a student with student_id is enrolled in. This path belongs to the Enrollment table.
     get:
       description: List of courses the student is enrolled in
       parameters:
@@ -524,7 +524,7 @@ paths:
           description: Internal Server Error
 
     post:
-      description: Add student enrollment aka enroll the student to a course
+      description: Add student enrollment aka enroll the student to the course. This path belongs to the Enrollment table.
       parameters:
         - in: path
           name: student_id
@@ -575,8 +575,8 @@ paths:
                   error_message:
                     type: string
 
-  /api/student/{student_id}/enrollment/{enrollment_id}:
-    description: Url to delete enrollment of given enrollment_id
+  /api/student/{student_id}/course/{course_id}:
+    description: Url to delete enrollment of a student in a course. This path belongs to the Enrollment table.
     delete:
       description: Delete student enrollment.
       parameters:
