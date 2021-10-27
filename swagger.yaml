@@ -492,7 +492,7 @@ paths:
   /api/student/{student_id}/courses:
     description: Url to get the the list of enrollments a student with student_id is enrolled in.
     get:
-      description: URL to get the list enrollments, the student is enrolled in. This path belongs to the Enrollment table.
+      description: URL to get the list of enrollments, the student is enrolled in. This path belongs to the Enrollment table.
       parameters:
         - in: path
           name: student_id
@@ -578,7 +578,7 @@ paths:
   /api/student/{student_id}/course/{course_id}:
     description: URL to delete enrollment of a student in a course. This path belongs to the Enrollment table.
     delete:
-      description: Url to delete enrollment of a student in a course. This path belongs to the Enrollment table.
+      description: URL to delete enrollment of the student in the course. This path belongs to the Enrollment table.
       parameters:
         - in: path
           name: student_id
