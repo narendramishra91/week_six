@@ -12,7 +12,7 @@ info:
         <li>The Python program must be written inside a file named "app.py". This file must reside inside the root folder.</li>
         <li> The database file named "database.sqlite3". You are not required to submit this database file with your submission.</li>
       </ol>
-    <li> You should not keep any code inside the scope of the condition " if __name__ == `__main__' " except run() call. 
+    <li> You should not keep any code inside the scope of the condition " if __name__ == '__main__' " except run() call. 
     <li> Allowed Python packages: flask, flask-sqlalchemy, flask-restful, any standard Python3 package.</li>
     </ol>
     </div>
