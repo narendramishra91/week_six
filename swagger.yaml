@@ -1,15 +1,16 @@
 openapi: 3.0.0
 info:
-  title: Week Six Assignment
+  title: Week Six Assignment Problem Statement
   description: >
-    <div>In this assignment, you have to create a RESTful API, database models using Flask-RESTful  and flask-SQLAlchemy. We list below instructions to be followed in preparing and submitting the solution.
+    <div>In this assignment, you have to create a RESTful API, database models using Flask-RESTful  and flask-SQLAlchemy. We list below instructions to be followed in 
+    preparing and submitting the solution.
     <h3>General instructions:</h3>
     <ol> 
       <li> Submit a single .zip file containing all your submission files and folders, the name of which should be "roll_number.zip". E.g.: 21f1000000.zip </li>
       <li>The folder structure inside the zip file should be as follows:</li>
       <ol type = "I">
         <li>The Python program must be written inside a file named "app.py". This file must reside inside the root folder.</li>
-        <li> The database file named "database.sqlite3". You are not required to submit this database file with your submission.</li>
+        <li> The database file named "api_database.sqlite3". You are not required to submit this database file with your submission.</li>
       </ol>
     <li> You should not keep any code inside the scope of the condition " if __name__ == '__main__' " except run() call. 
     <li> Allowed Python packages: flask, flask-sqlalchemy, flask-restful, and any standard Python3 package.</li>
