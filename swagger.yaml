@@ -5,18 +5,19 @@ info:
     Documentation for the week six assignment.
     <div>In this assignment, you have to create a RESTful API, a database model, using Flask-RESTful  and flask-SQLAlchemy. We list below instructions to be followed in preparing and submitting the solution.
     <h2>General instructions:</h2>
-    <ul> 
+    <ol> 
       <li> Submit a single .zip file containing all your submission files and folders, the name of which should be <roll_number>.zip". E.g.: 21f1000000.zip </li>
       <li>The folder structure inside the zip file should be as follows:</li>
-      <ul>
+      <ol>
         <li>The Python program must be written inside a file named ``app.py". This file must reside inside the root folder.</li>
         <li>All the HTML files should be kept inside a folder named ``templates" and the images and CSS files (if any) should be kept in
         "static" folder. Both the "static" and "templates" folder must reside in the root directory.</li> 
         <li> The database file named ``database.sqlite3". You are not required to submit this database file with your submission.</li>
-      </ul>
+      </ol>
     <li> All the endpoints must return 200 as the status code in the case of success. </li>
     <li> You should not keep any code inside the scope of the condition " if __name__ == `__main__' " except run() call. 
     <li> Allowed Python packages: jinja2, flask, flask-sqlalchemy, or any standard Python3 package.</li>
+    </ol>
     </div>
 
     <h2> Course Table Schema </h2> 
