@@ -16,7 +16,7 @@ info:
       </ol>
     <li> All the endpoints must return 200 as the status code in the case of success. </li>
     <li> You should not keep any code inside the scope of the condition " if __name__ == `__main__' " except run() call. 
-    <li> Allowed Python packages: jinja2, flask, flask-sqlalchemy, or any standard Python3 package.</li>
+    <li> Allowed Python packages: flask, flask-sqlalchemy, flask-restful, any standard Python3 package.</li>
     </ol>
     </div>
 
