@@ -2,7 +2,6 @@ openapi: 3.0.0
 info:
   title: Week Six Assignment
   description: >
-    Documentation for the week six assignment.
     <div>In this assignment, you have to create a RESTful API, database models using Flask-RESTful  and flask-SQLAlchemy. We list below instructions to be followed in preparing and submitting the solution.
     <h3>General instructions:</h3>
     <ol> 
@@ -13,7 +12,7 @@ info:
         <li> The database file named "database.sqlite3". You are not required to submit this database file with your submission.</li>
       </ol>
     <li> You should not keep any code inside the scope of the condition " if __name__ == '__main__' " except run() call. 
-    <li> Allowed Python packages: flask, flask-sqlalchemy, flask-restful, any standard Python3 package.</li>
+    <li> Allowed Python packages: flask, flask-sqlalchemy, flask-restful, and any standard Python3 package.</li>
     </ol>
     </div>
 
