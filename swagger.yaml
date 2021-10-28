@@ -6,7 +6,7 @@ info:
     <div>In this assignment, you have to create a RESTful API, database models using Flask-RESTful  and flask-SQLAlchemy. We list below instructions to be followed in preparing and submitting the solution.
     <h3>General instructions:</h3>
     <ol> 
-      <li> Submit a single .zip file containing all your submission files and folders, the name of which should be <roll_number>.zip. E.g.: 21f1000000.zip </li>
+      <li> Submit a single .zip file containing all your submission files and folders, the name of which should be "<roll_number>.zip". E.g.: 21f1000000.zip </li>
       <li>The folder structure inside the zip file should be as follows:</li>
       <ol type = "I">
         <li>The Python program must be written inside a file named "app.py". This file must reside inside the root folder.</li>
@@ -96,12 +96,12 @@ info:
       <tr>
         <td>student_id</td>
         <td>Integer</td>
-        <td>Foreign Key (student.studentid), Not Null</td>
+        <td>Foreign Key (student.student_id), Not Null</td>
       </tr>
       <tr>
         <td>course_id</td>
         <td>Integer</td>
-        <td>Foreign Key (course.courseid), Not Null</td>
+        <td>Foreign Key (course.course_id), Not Null</td>
     </tbody>
     </table>
     
