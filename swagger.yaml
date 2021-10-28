@@ -4,7 +4,7 @@ info:
   description: >
     Documentation for the week six assignment.
     <div>In this assignment, you have to create a RESTful API, a database model, using Flask-RESTful  and flask-SQLAlchemy. We list below instructions to be followed in preparing and submitting the solution.
-    <h2>General instructions:</h2>
+    <h3>General instructions:</h3>
     <ol> 
       <li> Submit a single .zip file containing all your submission files and folders, the name of which should be <roll_number>.zip". E.g.: 21f1000000.zip </li>
       <li>The folder structure inside the zip file should be as follows:</li>
@@ -20,7 +20,7 @@ info:
     </ol>
     </div>
 
-    <h2> Course Table Schema </h2> 
+    <h3> Course Table Schema </h3> 
     <table>
       <thead>
         <th>Column Name</th>
@@ -51,7 +51,7 @@ info:
     </tbody>
     </table>
     
-    <h2> Student Table Schema </h2> 
+    <h3> Student Table Schema </h3> 
     <table>
       <thead>
         <th>Column Name</th>
@@ -83,7 +83,7 @@ info:
     </table>
     
     
-    <h2> Enrollment Table Schema </h2> 
+    <h3> Enrollment Table Schema </h3> 
     <table>
       <thead>
         <th>Column Name</th>
@@ -108,7 +108,7 @@ info:
     </tbody>
     </table>
     
-    <h2> Error Codes </h2> 
+    <h3> Error Codes </h3> 
     <table>
       <thead>
         <th>Resource</th>
