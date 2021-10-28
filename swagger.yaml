@@ -8,7 +8,7 @@ info:
     <ol> 
       <li> Submit a single .zip file containing all your submission files and folders, the name of which should be <roll_number>.zip". E.g.: 21f1000000.zip </li>
       <li>The folder structure inside the zip file should be as follows:</li>
-      <ol>
+      <ol typr = "I">
         <li>The Python program must be written inside a file named ``app.py". This file must reside inside the root folder.</li>
         <li>All the HTML files should be kept inside a folder named ``templates" and the images and CSS files (if any) should be kept in
         "static" folder. Both the "static" and "templates" folder must reside in the root directory.</li> 
