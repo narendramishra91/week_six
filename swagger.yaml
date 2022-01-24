@@ -163,7 +163,7 @@ info:
     
   version: 1.0.0
 servers:
-  - url: http://127.0.0.1:5000/
+  - url: https://mad2week6updated.narendramishra2.repl.co/
 paths:
   /api/course/{course_id}:
     description: End point to read, update and delete a course resource with course_id = courseId.
